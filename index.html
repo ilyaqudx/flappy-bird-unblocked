@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="1l2_RiYCAmp7s6J2NHcgw_LJhvbjY_CoSzl1ZSu_Lws" />
+  <title>Flappy Bird Unblocked - Play Free Original Flappy Bird Online</title>
+  <meta name="description" content="Play Flappy Bird Unblocked online for free! Enjoy the classic 2013 arcade hit with authentic flap physics, Day/Night themes, moving pipes, and achievement medals. 100% unblocked on school Chromebooks.">
+  <meta name="keywords" content="flappy bird, flappy bird unblocked, play flappy bird online, flappy bird free, flappy bird chromebook, classic flappy bird, flappy bird google">
+  <link rel="canonical" href="https://flappy-bird-unblocked.vercel.app/">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flappy Bird Unblocked - Play Classic Flappy Bird Free">
+  <meta property="og:description" content="Tap to flap and navigate through retro green pipes. Instant load, zero ads, playable on desktop and mobile.">
+  <meta property="og:url" content="https://flappy-bird-unblocked.vercel.app/">
+  <meta property="og:image" content="https://flappy-bird-unblocked.vercel.app/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flappy Bird Unblocked Online">
+  <meta name="twitter:description" content="How high can you score? Test your timing with the legendary Flappy Bird arcade game.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flappy-bird-unblocked.vercel.app/#app",
+        "name": "Flappy Bird Unblocked",
+        "url": "https://flappy-bird-unblocked.vercel.app/",
+        "applicationCategory": "GameApplication",
+        "genre": "Arcade",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires HTML5 support",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Flappy Bird Unblocked is an ultra-fast, responsive HTML5 browser recreation of the iconic 2013 mobile game, featuring authentic jump physics, audio effects, Day/Night cycles, and achievement medals."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flappy-bird-unblocked.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you control Flappy Bird?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Press Spacebar, Up Arrow, or W key on your keyboard, or click / tap anywhere on the screen. On mobile phones, you can also use the big 'Tap to Flap' button."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Flappy Bird Unblocked safe and free to play at school?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Flappy Bird Unblocked is 100% client-side with zero external trackers, ads, or downloads. It runs smoothly on school Chromebooks and restricted networks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What score is required to win medals in Flappy Bird?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You earn Bronze at 10 points, Silver at 20 points, Gold at 30 points, and the coveted Platinum Diamond medal at 50 points or above."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the secret tips to getting a high score?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keep your bird near the lower lip of each pipe gap and rely on short rhythmic taps rather than frantic double clicks. Anticipate the next opening as soon as you clear the current pipe rim."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://flappy-bird-unblocked.vercel.app/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://flappy-bird-unblocked.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Flappy Bird Unblocked",
+            "item": "https://flappy-bird-unblocked.vercel.app/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-icon">🐤</span>
+          <div class="brand-text">
+            <span class="brand-title">FLAPPY BIRD</span>
+            <span class="brand-badge">UNBLOCKED</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="btn-sound" class="icon-btn" title="Toggle Sound" aria-label="Audio Toggle">
+            <span id="sound-icon">🔊</span>
+          </button>
+          <button id="btn-help" class="icon-btn" title="How to Play" aria-label="Help">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="main-content">
+      <div class="game-container">
+        <!-- Controls Toolbar -->
+        <div class="toolbar-row">
+          <div class="btn-group">
+            <button id="btn-restart" class="btn primary" title="Restart Game">🔄 Restart</button>
+          </div>
+
+          <div class="btn-group">
+            <select id="select-diff" class="select-ctrl" aria-label="Difficulty Mode">
+              <option value="easy">Easy (Wide Gap)</option>
+              <option value="normal" selected>Normal (Classic)</option>
+              <option value="hard">Hard (Moving Pipes ⚡)</option>
+            </select>
+
+            <select id="select-theme" class="select-ctrl" aria-label="Environment Theme">
+              <option value="day" selected>☀️ Day</option>
+              <option value="night">🌙 Night</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-wrapper">
+          <canvas id="flappy-canvas"></canvas>
+          <div id="canvas-overlay" class="canvas-overlay">
+            <h3>🐤 Flap into Action!</h3>
+            <p>Click, Tap, or Press Spacebar to Fly</p>
+          </div>
+        </div>
+
+        <!-- Mobile Flap Big Bar -->
+        <div class="mobile-tap-bar">
+          <button id="btn-tap-flap" class="btn-tap-flap" aria-label="Flap Wings">
+            <span>🪽</span> TAP TO FLAP
+          </button>
+        </div>
+      </div>
+
+      <!-- SEO Educational Section -->
+      <section class="seo-section">
+        <article class="seo-card">
+          <h1>Flappy Bird Unblocked: The Classic 2013 Mobile Arcade Phenomenon</h1>
+          <p>Welcome to <strong>Flappy Bird Unblocked</strong>, the definitive pure HTML5 browser recreation of the legendary mobile sensation created by Dong Nguyen in 2013. Designed with zero latency, responsive physics, authentic 8-bit sound effects, and zero advertisements, this unblocked edition lets you experience the ultimate test of reflex and patience right in your web browser.</p>
+
+          <h2>🎯 How to Play Flappy Bird</h2>
+          <ul>
+            <li><strong>The Flap Mechanic</strong>: Tap your screen, click your mouse, or hit <strong>Spacebar / Up Arrow</strong>. Each flap propels your bird upward against constant downward gravitational pull.</li>
+            <li><strong>Thread the Green Pipes</strong>: Carefully guide your bird through the narrow gaps between the top and bottom green warp pipes without touching their rim or body.</li>
+            <li><strong>Avoid the Ground & Ceiling</strong>: Grazing the scrolling grassy ground or drifting too high will instantly end your run.</li>
+            <li><strong>Earn Medals</strong>: Reach high-score milestones to unlock Bronze (10+), Silver (20+), Gold (30+), and Platinum Diamond (50+) achievement medals!</li>
+          </ul>
+
+          <h2>🏆 Pro Tips for Setting Massive High Scores</h2>
+          <ul>
+            <li><strong>Rhythmic Pulse Timing</strong>: Do not panic flap. Allow gravity to pull the bird down gently, then perform a single rhythmic flap right as you approach the bottom lip of the pipe opening.</li>
+            <li><strong>Look Ahead</strong>: Never stare solely at your bird. Fix your eyes one pipe ahead so your subconscious can calculate the exact flap sequence before you arrive.</li>
+            <li><strong>Try Easy Mode First</strong>: If you are new or warming up, switch to <em>Easy Mode</em> in the toolbar for a 20% wider pipe gap and gentler downward acceleration.</li>
+            <li><strong>Hard Mode Challenge</strong>: For veterans seeking a true test, <em>Hard Mode</em> activates vertically oscillating moving pipes that test micro-adjustments!</li>
+          </ul>
+        </article>
+
+        <!-- FAQ Section -->
+        <article class="seo-card">
+          <h2>❓ Frequently Asked Questions (FAQ)</h2>
+          <div class="faq-list">
+            <details open>
+              <summary>Why did the original Flappy Bird disappear from app stores?</summary>
+              <p>In February 2014, creator Dong Nguyen voluntarily removed the game from the App Store and Google Play because he felt its addictive nature was causing unhealthy stress for millions of players. This browser edition preserves the historic masterpiece in a lightweight, accessible web format.</p>
+            </details>
+            <details>
+              <summary>Can I play Flappy Bird Unblocked at school on a Chromebook?</summary>
+              <p>Yes! Flappy Bird Unblocked is hosted as a lightweight static web application with no Flash, external tracking, or third-party ads, making it accessible on school Chromebooks and restricted networks.</p>
+            </details>
+            <details>
+              <summary>Does Flappy Bird Unblocked remember my best score?</summary>
+              <p>Yes! Your personal high score is automatically recorded in your browser's local storage so you can track your progress over time.</p>
+            </details>
+            <details>
+              <summary>Can I play with a controller or keyboard?</summary>
+              <p>Yes, you can use the Spacebar, Up Arrow, or W key on any keyboard, or click/tap with mouse or touch gestures.</p>
+            </details>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Game Over Modal -->
+    <div id="modal-gameover" class="modal-overlay" hidden>
+      <div class="modal-card">
+        <div class="modal-icon">💀</div>
+        <h2 class="modal-title">Game Over!</h2>
+        
+        <div class="scoreboard-box">
+          <div class="score-item">
+            <div class="label">Score</div>
+            <div id="final-score" class="value">0</div>
+          </div>
+          <div class="score-item">
+            <div class="label">Best</div>
+            <div id="best-score" class="value">0</div>
+          </div>
+        </div>
+
+        <div id="medal-box" class="medal-box" hidden></div>
+
+        <button id="btn-play-again-loss" class="btn primary">Play Again 🐤</button>
+      </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="modal-help" class="modal-overlay" hidden>
+      <div class="modal-card">
+        <div class="modal-icon">📖</div>
+        <h2 class="modal-title">How to Play</h2>
+        <p class="modal-desc" style="color:#94a3b8; font-size: 0.9rem; margin-bottom: 18px; line-height: 1.5;">
+          Tap the screen, click the mouse, or press Spacebar to flap wings.<br><br>
+          Fly between the green pipes without crashing into them or hitting the ground.<br><br>
+          Earn 1 point for every pipe passed!
+        </p>
+        <button class="btn primary modal-close">Got It!</button>
+      </div>
+    </div>
+
+    <!-- Matrix Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <h3 class="matrix-title">🎮 More Free Casual Web Games</h3>
+        <nav class="matrix-grid" aria-label="Game Matrix">
+          <a href="https://seo-game-website.vercel.app/" class="matrix-link">
+            <span>🔷</span> Hextris Unblocked
+          </a>
+          <a href="https://waffle-game-unlimited.vercel.app/" class="matrix-link">
+            <span>🧇</span> Waffle Unlimited
+          </a>
+          <a href="https://falling-sand-game-one.vercel.app/" class="matrix-link">
+            <span>⏳</span> Falling Sand Game
+          </a>
+          <a href="https://hex-2048-nu.vercel.app/" class="matrix-link">
+            <span>🔢</span> 2048 Hexagonal
+          </a>
+          <a href="https://bloxorz-unblocked.vercel.app/" class="matrix-link">
+            <span>🧊</span> Bloxorz Unblocked
+          </a>
+          <a href="https://minesweeper-unlimited.vercel.app/" class="matrix-link">
+            <span>💣</span> Minesweeper Unlimited
+          </a>
+          <a href="https://snake-game-classic-chi.vercel.app/" class="matrix-link">
+            <span>🐍</span> Snake Game Classic
+          </a>
+          <a href="https://flappy-bird-unblocked.vercel.app/" class="matrix-link current" aria-current="page">
+            <span>🐤</span> Flappy Bird Unblocked
+          </a>
+          <a href="https://wordle-unlimited.vercel.app/" class="matrix-link">
+            <span>🟩</span> Wordle Unlimited
+          </a>
+          <a href="https://doodle-jump-unblocked.vercel.app/" class="matrix-link">
+            <span>🦘</span> Doodle Jump Unblocked
+          </a>
+        </nav>
+        <p class="footer-copy">© 2026 Casual Game Matrix. Built with pure HTML5 Canvas for speed & accessibility.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
