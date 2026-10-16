@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://flappy-bird-unblocked.vercel.app/sitemap.xml
+Sitemap: https://flappy-bird-unblocked-topaz.vercel.app/sitemap.xml
